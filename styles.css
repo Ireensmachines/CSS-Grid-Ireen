@@ -1,1 +1,53 @@
-/*Maak hier jouw CSS!*/
+body {
+    background-color: antiquewhite;
+    display: grid;
+    background-color: antiquewhite;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-areas:
+"atopsmallleft atopbigright"
+"bcontent ctopbigright"
+"bcontent ecentre dsmallright"
+"bcontent ecentre . "
+"ffooter";
+
+}
+/*.container {
+
+}*/
+
+#atopsmallleft {
+    background-color: hotpink;
+    grid-area:header;
+    display: grid;
+}
+#bcontent {
+    display: grid;
+    background-color: hotpink;
+    grid-area: p;
+
+}
+#ctopbigright {
+    display: grid;
+    background-color: hotpink;
+    grid-area: header;
+}
+#dsmallright {
+    display: grid;
+    grid-area: aside;
+    background-color: hotpink;
+}
+#ecentre {
+    display: grid;
+    background-color: hotpink;
+    grid-area: section;
+}
+#ffooter {
+    background-color: hotpink;
+    grid-area: footer;
+    display: grid;
+}
+
+
+
