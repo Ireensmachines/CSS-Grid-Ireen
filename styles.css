@@ -1,53 +1,68 @@
-body {
-    background-color: antiquewhite;
-    display: grid;
-    background-color: antiquewhite;
+/*.body {
+background-color:
+ */
+.container {
     display:grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 100px 100px 100px 100px;
+    background-color: antiquewhite;
+    color: navajowhite;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 66px 158px auto 100px 66px;
     grid-template-areas:
-"atopsmallleft atopbigright"
-"bcontent ctopbigright"
-"bcontent ecentre dsmallright"
-"bcontent ecentre . "
-"ffooter";
+    "a c c"
+    "b c c"
+    "b e d"
+    "b e ."
+    "f f f"
+}
+.items {
 
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:center;
+    border: 3px solid #b83535;
+    outline: none;
+    background-color: #bd4848;
 }
-/*.container {
 
-}*/
+#a {
 
-#atopsmallleft {
-    background-color: hotpink;
-    grid-area:header;
-    display: grid;
-}
-#bcontent {
-    display: grid;
-    background-color: hotpink;
-    grid-area: p;
+        grid-area: a;
+        margin: 16px 8px 8px 16px;
 
+    }
+
+#b {
+
+        grid-area: b;
+        margin: 8px 8px 8px 16px;
+    }
+
+#c {
+
+        grid-area: c;
+        margin: 16px 16px 8px 8px;
 }
-#ctopbigright {
-    display: grid;
-    background-color: hotpink;
-    grid-area: header;
+
+#d {
+        grid-area: d;
+        background-color: #bd4848;
+        margin: 8px 16px 8px 8px;
 }
-#dsmallright {
-    display: grid;
-    grid-area: aside;
-    background-color: hotpink;
-}
-#ecentre {
-    display: grid;
-    background-color: hotpink;
-    grid-area: section;
-}
-#ffooter {
-    background-color: hotpink;
-    grid-area: footer;
-    display: grid;
-}
+
+#e {
+
+        background-color: hsl(0, 47%, 51%);
+        grid-area: e;
+        margin: 8px;
+
+    }
+
+#f {
+        background-color: hsl(0, 47%, 51%);
+        grid-area: f;
+        margin: 8px 16px 16px;
+    }
 
 
 
